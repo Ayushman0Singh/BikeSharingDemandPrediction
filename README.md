@@ -1,13 +1,47 @@
 # BikeSharingDemandPrediction
-Supervised Ml-Regression
-Bike-sharing systems are a means of renting bicycles where the process of obtaining rental, and bike return is automated via a network of locations throughout a city. 
 
-We are required to model the demand for shared bikes with the available independent variables. It will be used by the management to understand how exactly the demands vary with different features. They can accordingly manipulate the business strategy to meet the demand levels and meet the customer's expectations. Further, the model could be a good way for management to understand the demand dynamics of a new market.
-This looks like a regression problem since we are predicting a continuous variable.
+## Overview
 
-I looked at the individual distributions of all these variables. I proceed to apply certain transformations on these variables in order to make them normally distributed. I also did some hypothesis-driven EDA by verifying certain hypotheses that were important to the business problem at hand. 
+Bike-sharing systems automate the process of renting and returning bicycles through a network of locations in a city. This project focuses on predicting the demand for shared bikes using supervised machine learning regression techniques. The goal is to model how demand varies with different features, allowing the management to adjust business strategies accordingly and understand the demand dynamics in a new market.
 
-After that, I did some data preparation which included steps like Null-value treatment, feature engineering, encoding categorical columns and Standardising the numeric features before applying ML models. I split the data into train and test set for the ml models.
+## Problem Statement
 
-Next, I applied different machine learning models to predict rented_bike_count. I used techniques like Linear Regression, Regularised LR, Decision Tree, Random -forest, Ada-Boost, GBM(Gradient Boosting Machine). Hyperparameter tuning was done for all these algorithms and the best hyper-parameters were considered for training.
-Of all the models, GBM performed the best with an r-square value of 0.88, next was RF with an r-square value of 0.84 followed by DT regressor with an r-square of 0.76. Ada-Boost performed the worst among these algorithms with an r-square of 0.58 on only. 
+The task involves modeling the demand for shared bikes as a regression problem, predicting a continuous variable. The project addresses the challenge of understanding how demand varies with independent variables and how management can adapt strategies to meet customer expectations.
+
+## Exploratory Data Analysis (EDA)
+
+- Examined individual distributions of variables.
+- Applied transformations for normal distribution.
+- Conducted hypothesis-driven EDA to verify business-critical hypotheses.
+
+## Data Preparation
+
+- Null-value treatment.
+- Feature engineering.
+- Encoding categorical columns.
+- Standardizing numeric features.
+
+## Model Training
+
+- Split data into train and test sets.
+- Applied various machine learning models for predicting rented_bike_count:
+  - Linear Regression
+  - Regularized LR
+  - Decision Tree
+  - Random Forest
+  - Ada-Boost
+  - GBM (Gradient Boosting Machine)
+
+## Model Evaluation
+
+- Hyperparameter tuning for all algorithms.
+- Best hyperparameters considered for model training.
+- Model Performance:
+  - GBM: R-square value of 0.88 (Best performer).
+  - Random Forest: R-square value of 0.84.
+  - Decision Tree Regressor: R-square value of 0.76.
+  - Ada-Boost: R-square value of 0.58 (Least performer).
+
+## Conclusion
+
+This project successfully addresses the regression problem of predicting bike-sharing demand. The Gradient Boosting Machine (GBM) model demonstrated the best performance, achieving an R-square value of 0.88. Further improvements could involve exploring additional features or trying advanced regression techniques.
